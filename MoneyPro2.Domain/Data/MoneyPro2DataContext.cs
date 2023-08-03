@@ -6,16 +6,22 @@ using Money2.Domain.ValueObjects;
 
 namespace Money2.Domain.Data;
 
-public class Money2DataContext : DbContext
+public class MoneyPro2DataContext : DbContext
 {
+    public MoneyPro2DataContext(DbContextOptions<MoneyPro2DataContext> options)
+        : base(options)
+    {
+
+    }
+
     public DbSet<User> Users { get; set; } = null!;
 
-    protected override void OnConfiguring(DbContextOptionsBuilder options)
-    {
-        options.UseSqlServer(
-            "Server=localhost;Database=MoneyPro2;Integrated Security=True;Trust Server Certificate=true;"
-        );
-    }
+    //protected override void OnConfiguring(DbContextOptionsBuilder options)
+    //{
+    //    options.UseSqlServer(
+    //        "Server=localhost;Database=MoneyPro2;Integrated Security=True;Trust Server Certificate=true;"
+    //    );
+    //}
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

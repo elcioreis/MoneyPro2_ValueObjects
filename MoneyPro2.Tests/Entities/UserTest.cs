@@ -16,7 +16,7 @@ public class UserTest
     [TestCategory("Domain.Entities")]
     public void Usuario_Com_UserName_Invalido_Deve_Falhar()
     {
-        UserName invalidUserName = new UserName("");
+        UserName invalidUserName = new UserName("Um Usuario");
         User user = new User(invalidUserName, _name, _email, _cpf, _password);
         Assert.IsFalse(user.IsValid);
     }

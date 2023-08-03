@@ -10,7 +10,7 @@ using Money2.Domain.Data;
 
 namespace MoneyPro2.Domain.Migrations
 {
-    [DbContext(typeof(Money2DataContext))]
+    [DbContext(typeof(MoneyPro2DataContext))]
     [Migration("20230802212946_Initial")]
     partial class Initial
     {
