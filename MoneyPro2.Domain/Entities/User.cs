@@ -1,5 +1,6 @@
 using Flunt.Notifications;
 using Money2.Domain.ValueObjects;
+using System.Text.Json.Serialization;
 
 namespace Money2.Domain.Entities;
 
@@ -28,5 +29,6 @@ public class User : Notifiable<Notification>
     public Name Name { get; private set; } = null!;
     public Email Email { get; private set; } = null!;
     public CPF CPF { get; private set; } = null!;
+    [JsonIgnore]
     public Password Password { get; private set; } = null!;
 }
