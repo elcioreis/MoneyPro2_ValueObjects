@@ -7,11 +7,11 @@ namespace Money2.Domain.ValueObjects;
 
 public class UserName : ValueObject
 {
-    private readonly Regex _allowed = new Regex("^(?=.*?[A-Z]|[a-z]|[0-9]|[@$%^&*-.]).{2,}$");
+    private readonly Regex _allowed = new Regex("^([a-z0-9@.]){2,20}$");
 
     public UserName(string username)
     {
-        Username = username;
+        Username = username.Trim().ToLower();
 
         AddNotifications(
             new Contract<Notification>()
@@ -24,7 +24,7 @@ public class UserName : ValueObject
                 .IsTrue(
                     _allowed.IsMatch(Username),
                     "Username",
-                    "O username deve conter letras maiúsculas, minúsculas ou números"
+                    @"O username deve conter somente letras, números, ponto ou arroba"
                 )
         );
     }

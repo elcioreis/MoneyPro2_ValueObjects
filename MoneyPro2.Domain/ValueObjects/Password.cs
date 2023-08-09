@@ -24,7 +24,7 @@ public class Password : ValueObject
                 .IsTrue(
                     _strongPassword.IsMatch(plain),
                     "Password",
-                    "A senha deve conter maiúsculas, minúsculas, números e caracteres especiais"
+                    "A senha deve ter maiúsculas, minúsculas, números, caracteres especiais e ao menos 8 caracteres"
                 )
         );
     }

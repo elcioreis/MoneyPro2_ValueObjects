@@ -9,7 +9,7 @@ using Money2.Domain.Data;
 
 namespace MoneyPro2.Domain.Migrations
 {
-    [DbContext(typeof(Money2DataContext))]
+    [DbContext(typeof(MoneyPro2DataContext))]
     partial class Money2DataContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
