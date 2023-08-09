@@ -1,4 +1,4 @@
-namespace Money2.Shared.Commands;
+namespace MoneyPro2.Shared.Commands;
 
 public interface ICommandResult
 {

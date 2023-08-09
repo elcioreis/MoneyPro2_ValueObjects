@@ -1,6 +1,6 @@
 using Flunt.Notifications;
 
-namespace Money2.Shared.Entities;
+namespace MoneyPro2.Shared.Entities;
 
 public abstract class Entity : Notifiable<Notification>
 {

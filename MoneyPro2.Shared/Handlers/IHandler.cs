@@ -1,6 +1,6 @@
-using Money2.Shared.Commands;
+using MoneyPro2.Shared.Commands;
 
-namespace Money2.Shared.Handlers;
+namespace MoneyPro2.Shared.Handlers;
 
 public interface IHandler<T> where T : ICommand
 {

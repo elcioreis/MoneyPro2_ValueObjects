@@ -1,9 +1,9 @@
 using Flunt.Notifications;
 using Flunt.Validations;
-using Money2.Shared.ValueObjects;
+using MoneyPro2.Shared.ValueObjects;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Money2.Domain.ValueObjects;
+namespace MoneyPro2.Domain.ValueObjects;
 
 public class Name : ValueObject
 {

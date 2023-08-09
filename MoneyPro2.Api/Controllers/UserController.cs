@@ -1,12 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Money2.Domain.Data;
-using Money2.Domain.Entities;
-using Money2.Domain.ValueObjects;
 using MoneyPro2.Api.Services;
 using MoneyPro2.Api.ViewModels;
 using MoneyPro2.Api.ViewModels.User;
+using MoneyPro2.Domain.Data;
 using MoneyPro2.Domain.Entities;
+using MoneyPro2.Domain.ValueObjects;
 
 namespace MoneyPro2.Api.Controllers;
 

@@ -1,13 +1,13 @@
 ﻿using Flunt.Notifications;
 using Flunt.Validations;
-using Money2.Shared.ValueObjects;
+using MoneyPro2.Shared.ValueObjects;
 using System.Text.RegularExpressions;
 
-namespace Money2.Domain.ValueObjects;
+namespace MoneyPro2.Domain.ValueObjects;
 
-public class UserName : ValueObject
+public partial class UserName : ValueObject
 {
-    private readonly Regex _allowed = new Regex("^([a-z0-9@.]){2,20}$");
+    private readonly Regex _allowed = AllowedChars();
 
     public UserName(string username)
     {
@@ -17,7 +17,7 @@ public class UserName : ValueObject
             new Contract<Notification>()
                 .Requires()
                 .IsTrue(
-                    (Username.Length >= 2) && (Username.Length <= 20),
+                    Username.Length >= 2 && Username.Length <= 20,
                     "Username",
                     "O username deve ter entre 2 e 20 caracteres"
                 )
@@ -30,4 +30,7 @@ public class UserName : ValueObject
     }
 
     public string Username { get; private set; } = null!;
+
+    [GeneratedRegex("^([a-z0-9@.]){2,20}$")]
+    private static partial Regex AllowedChars();
 }

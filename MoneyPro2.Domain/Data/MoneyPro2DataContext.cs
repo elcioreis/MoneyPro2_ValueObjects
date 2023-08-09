@@ -1,11 +1,10 @@
 ﻿using Flunt.Notifications;
 using Microsoft.EntityFrameworkCore;
-using Money2.Domain.Data.Mappings;
-using Money2.Domain.Entities;
-using Money2.Domain.ValueObjects;
+using MoneyPro2.Domain.Data.Mappings;
 using MoneyPro2.Domain.Entities;
+using MoneyPro2.Domain.ValueObjects;
 
-namespace Money2.Domain.Data;
+namespace MoneyPro2.Domain.Data;
 
 public class MoneyPro2DataContext : DbContext
 {

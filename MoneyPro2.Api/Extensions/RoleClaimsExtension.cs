@@ -1,4 +1,4 @@
-﻿using Money2.Domain.Entities;
+﻿using MoneyPro2.Domain.Entities;
 using System.Security.Claims;
 
 namespace MoneyPro2.Api.Extensions;

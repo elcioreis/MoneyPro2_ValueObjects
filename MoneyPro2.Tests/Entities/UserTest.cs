@@ -1,5 +1,5 @@
-using Money2.Domain.Entities;
-using Money2.Domain.ValueObjects;
+using MoneyPro2.Domain.Entities;
+using MoneyPro2.Domain.ValueObjects;
 
 namespace Money2.Tests.Entities;
 
