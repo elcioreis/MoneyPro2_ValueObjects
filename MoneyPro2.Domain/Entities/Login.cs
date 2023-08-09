@@ -1,5 +1,5 @@
 ﻿using Flunt.Notifications;
-using Money2.Domain.ValueObjects;
+using MoneyPro2.Domain.ValueObjects;
 
 namespace MoneyPro2.Domain.Entities;
 public class Login : Notifiable<Notification>

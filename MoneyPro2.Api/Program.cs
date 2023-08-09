@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using Money2.Domain.Data;
 using MoneyPro2.Api.Services;
+using MoneyPro2.Domain.Data;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);

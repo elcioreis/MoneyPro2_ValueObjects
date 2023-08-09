@@ -1,10 +1,10 @@
 using Flunt.Notifications;
 using Flunt.Validations;
-using Money2.Shared.Functions;
-using Money2.Shared.ValueObjects;
+using MoneyPro2.Shared.Functions;
+using MoneyPro2.Shared.ValueObjects;
 using System.Text.RegularExpressions;
 
-namespace Money2.Domain.ValueObjects;
+namespace MoneyPro2.Domain.ValueObjects;
 
 public class Password : ValueObject
 {

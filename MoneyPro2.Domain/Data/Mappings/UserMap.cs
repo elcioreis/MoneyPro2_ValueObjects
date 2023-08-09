@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Money2.Domain.Entities;
+using MoneyPro2.Domain.Entities;
 
-namespace Money2.Domain.Data.Mappings;
+namespace MoneyPro2.Domain.Data.Mappings;
 
 public class UserMap : IEntityTypeConfiguration<User>
 {

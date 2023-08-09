@@ -1,6 +1,6 @@
 using Flunt.Notifications;
 
-namespace Money2.Shared.ValueObjects;
+namespace MoneyPro2.Shared.ValueObjects;
 
 public abstract class ValueObject : Notifiable<Notification>
 {

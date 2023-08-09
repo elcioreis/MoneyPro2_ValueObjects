@@ -1,8 +1,8 @@
 using Flunt.Notifications;
-using Money2.Domain.ValueObjects;
+using MoneyPro2.Domain.ValueObjects;
 using System.Text.Json.Serialization;
 
-namespace Money2.Domain.Entities;
+namespace MoneyPro2.Domain.Entities;
 
 public class User : Notifiable<Notification>
 {
